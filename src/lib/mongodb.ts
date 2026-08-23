@@ -1,7 +1,11 @@
-import { MongoClient, type Collection, type Db } from "mongodb";
-import type { Deadline } from "@/lib/types";
+import { MongoClient, ObjectId, type Collection, type Db } from "mongodb";
 
-type Doc = Omit<Deadline, "_id"> & { _id?: Deadline["_id"] };
+export type Doc = {
+  _id?: ObjectId;
+  title: string;
+  due: string;
+  created: string;
+};
 
 declare global {
   // eslint-disable-next-line no-var
@@ -10,15 +14,11 @@ declare global {
 
 function getClient(): Promise<MongoClient> {
   const uri = process.env.MONGODB_URI;
-
-  if (!uri) {
-    throw new Error("Missing MONGODB_URI environment variable");
-  }
+  if (!uri) throw new Error("Missing MONGODB_URI environment variable");
 
   if (!global._mongo) {
     global._mongo = new MongoClient(uri).connect();
   }
-
   return global._mongo;
 }
 

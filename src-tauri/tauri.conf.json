@@ -13,10 +13,10 @@
     "windows": [
       {
         "title": "DueDate",
-        "width": 340,
-        "height": 520,
-        "minWidth": 280,
-        "minHeight": 400,
+        "width": 240,
+        "height": 280,
+        "minWidth": 220,
+        "minHeight": 240,
         "resizable": true,
         "fullscreen": false,
         "alwaysOnTop": true

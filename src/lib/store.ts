@@ -32,6 +32,13 @@ export function addDeadline(input: NewDeadline): Deadline {
   return row;
 }
 
+export function updateDeadline(id: string, fields: Partial<NewDeadline>) {
+  const rows = read().map((r) =>
+    r.id === id ? { ...r, ...fields } : r,
+  );
+  write(rows);
+}
+
 export function removeDeadline(id: string) {
   write(read().filter((r) => r.id !== id));
 }

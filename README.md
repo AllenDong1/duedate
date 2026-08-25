@@ -1,6 +1,13 @@
 # DueDate
 
-A customizable web countdown application for tracking important dates, events, and deadlines.
+A small desktop countdown gadget for tracking deadlines.
+
+![](src/demo.jpg)
+
+- Add/edit tasks with a title and due date
+- Main card shows the soonest due task
+- Dark / light mode toggle
+- Data stored locally
 
 ## Stack
 

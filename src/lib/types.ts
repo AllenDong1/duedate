@@ -1,5 +1,5 @@
 export type Deadline = {
-  _id: string;
+  id: string;
   title: string;
   due: string;
   created: string;

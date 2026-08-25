@@ -2,35 +2,56 @@
 
 A customizable web countdown application for tracking important dates, events, and deadlines.
 
-## Features
+## Stack
 
-- Live countdown to deadlines
-- Create, edit, and delete deadlines
-- Customizable themes and interface
-- MongoDB data storage
-- Deadline notifications
-
-## Tech Stack
-
-- Next.js
+- Tauri
 - React
-- TypeScript
-- MongoDB
+- localStorage
 - GitHub Actions
 
-## Status
+## Layout
 
-In development (structure scaffolded).
+```
+src/
+  app/           # root React app
+  components/    # UI pieces
+  lib/           # countdown + localStorage
+  styles/        # global CSS
+src-tauri/       # desktop shell
+```
 
-## Planned
+## Setup
 
-- Deadline management
-- Custom themes
-- Dark and light mode
-- Notifications
-- Deployed web release
+Needs:
 
+- Node.js
+- Rust (`rustup`)
+- Visual Studio Build Tools (C++ workload) on Windows
 
+```bash
+npm install
+```
+
+## Run
+
+Browser UI:
+
+```bash
+npm run dev
+```
+
+Desktop window:
+
+```bash
+npm run desktop
+```
+
+## Test
+
+```bash
+npm test
+npm run lint
+```
 
 ## License
 

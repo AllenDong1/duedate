@@ -2,7 +2,9 @@
 
 A small desktop countdown gadget for tracking deadlines.
 
-![](src/demo.jpg)
+<p align="center">
+  <img src="src/demo.jpg" width="300" alt="Demo">
+</p>
 
 - Add/edit tasks with a title and due date
 - Main card shows the soonest due task

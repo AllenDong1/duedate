@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { daysLeft, daysLeftNum, isOverdue } from "@/lib/countdown";
 import { minDate } from "@/lib/util";
+import { BackgroundPicker } from "@/components/BackgroundPicker";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import type { Deadline } from "@/lib/types";
 
@@ -57,6 +58,7 @@ export function DeadlineList({ rows, now, onEdit, onRemove }: Props) {
     return (
       <div className="m2 empty-circle">
         <ThemeToggle />
+        <BackgroundPicker />
         <span className="circle-label">No deadlines yet</span>
       </div>
     );
@@ -68,6 +70,7 @@ export function DeadlineList({ rows, now, onEdit, onRemove }: Props) {
     <>
       <div className={`m2 ${isOverdue(first.due, now) ? "overdue" : ""}`}>
         <ThemeToggle />
+        <BackgroundPicker />
         <span className="circle-title">{first.title}</span>
         <span className="circle-days">
           <span className="num">{daysLeftNum(first.due, now)}</span>

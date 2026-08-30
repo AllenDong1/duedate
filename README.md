@@ -2,17 +2,34 @@
 
 A small desktop countdown gadget for tracking deadlines.
 
+- Add/edit tasks with a title and due date
+- Main card shows the soonest due task
+- Dark / light mode toggle
+- Customizable backgrounds: Classic preset or pick from a color map
+- Data stored locally
+
+## Demo
+### Color themes
+
 <p align="center">
   <img src="docs/demo/demo1.jpg" width="240" alt="DueDate demo 1" />
   <img src="docs/demo/demo2.jpg" width="240" alt="DueDate demo 2" />
   <img src="docs/demo/demo3.jpg" width="240" alt="DueDate demo 3" />
 </p>
 
-- Add/edit tasks with a title and due date
-- Main card shows the soonest due task
-- Dark / light mode toggle
-- Customizable backgrounds: Classic preset or pick from a color map
-- Data stored locally
+<table>
+  <tr>
+    <td align="center">
+      <h3>Dark/light mode</h3>
+      <img src="docs/demo/darkmode.gif" width="240" height="246" alt="DueDate dark/light mode" />
+    </td>
+    <td align="center">
+      <h3>Tasklist</h3>
+      <img src="docs/demo/tasklist.gif" width="240" height="246" alt="DueDate task list" />
+    </td>
+  </tr>
+</table>
+
 
 ## Stack
 

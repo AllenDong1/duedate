@@ -17,18 +17,20 @@ A small desktop countdown gadget for tracking deadlines.
   <img src="docs/demo/demo3.jpg" width="240" alt="DueDate demo 3" />
 </p>
 
-<table>
-  <tr>
-    <td align="center">
-      <h3>Dark/light mode</h3>
-      <img src="docs/demo/darkmode.gif" width="240" height="246" alt="DueDate dark/light mode" />
-    </td>
-    <td align="center">
-      <h3>Tasklist</h3>
-      <img src="docs/demo/tasklist.gif" width="240" height="246" alt="DueDate task list" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="10">
+    <tr>
+      <td align="center" width="280">
+        <h3>Dark/light mode</h3>
+        <img src="docs/demo/darkmode.gif" width="240" height="246" alt="DueDate dark/light mode" />
+      </td>
+      <td align="center" width="280">
+        <h3>Tasklist</h3>
+        <img src="docs/demo/tasklist.gif" width="240" height="246" alt="DueDate task list" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 ## Stack
